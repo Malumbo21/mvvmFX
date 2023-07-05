@@ -1,0 +1,2 @@
+module mvvmfx.validation {
+}

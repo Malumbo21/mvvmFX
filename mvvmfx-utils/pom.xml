@@ -41,6 +41,7 @@
         <dependency>
             <groupId>eu.lestard</groupId>
             <artifactId>doc-annotations</artifactId>
+            <version>0.3</version>
         </dependency>
 
         <!-- Testing Frameworks -->
@@ -48,6 +49,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
+            <version>5.9.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -59,6 +61,7 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
+            <version>3.24.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

@@ -1,0 +1,2 @@
+module mvvmfx.spring.boot {
+}

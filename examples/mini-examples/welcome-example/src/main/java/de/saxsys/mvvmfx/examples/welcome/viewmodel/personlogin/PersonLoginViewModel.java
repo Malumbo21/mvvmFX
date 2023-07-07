@@ -6,7 +6,7 @@ import javafx.beans.property.ReadOnlyIntegerProperty;
 import javafx.beans.property.ReadOnlyIntegerWrapper;
 import javafx.collections.FXCollections;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import de.saxsys.mvvmfx.examples.welcome.model.Person;
 import de.saxsys.mvvmfx.examples.welcome.model.Repository;

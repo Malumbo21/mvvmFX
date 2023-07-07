@@ -3,7 +3,7 @@ package de.saxsys.mvvmfx.examples.contacts.ui.addressform;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import de.saxsys.mvvmfx.InjectScope;
 import de.saxsys.mvvmfx.ViewModel;

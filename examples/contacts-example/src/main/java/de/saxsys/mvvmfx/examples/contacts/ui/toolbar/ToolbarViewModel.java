@@ -5,7 +5,7 @@ import de.saxsys.mvvmfx.ViewModel;
 import de.saxsys.mvvmfx.examples.contacts.ui.scopes.ContactDialogScope;
 
 import javax.enterprise.inject.Instance;
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import java.util.Collections;
 import java.util.List;
 

@@ -15,6 +15,7 @@
  ******************************************************************************/
 package de.saxsys.mvvmfx.utils.commands;
 
+import eu.lestard.doc.Beta;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.BooleanBinding;
 import javafx.beans.binding.DoubleBinding;
@@ -22,14 +23,9 @@ import javafx.beans.binding.DoubleExpression;
 import javafx.beans.property.ReadOnlyBooleanProperty;
 import javafx.beans.property.ReadOnlyDoubleProperty;
 import javafx.beans.property.ReadOnlyDoubleWrapper;
-import javafx.beans.value.ObservableDoubleValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
-import eu.lestard.doc.Beta;
-
-import java.util.concurrent.Callable;
-import java.util.function.Function;
 
 /**
  * CompositeCommand is an aggregation of other commands - a list of {@link Command} references internally.

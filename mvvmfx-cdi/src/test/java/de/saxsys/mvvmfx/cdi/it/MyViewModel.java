@@ -1,6 +1,6 @@
 package de.saxsys.mvvmfx.cdi.it;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import de.saxsys.mvvmfx.ViewModel;
 

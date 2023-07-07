@@ -76,7 +76,12 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <sonar.java.source>${java.version}</sonar.java.source>
     </properties>
-
+    <repositories>
+        <repository>
+            <id>jcenter</id>
+            <url>https://jcenter.bintray.com/</url>
+        </repository>
+    </repositories>
     <modules>
         <module>mvvmfx</module>
         <module>mvvmfx-cdi</module>
@@ -89,21 +94,24 @@
         <module>mvvmfx-testing-utils</module>
         <module>mvvmfx-validation</module>
     </modules>
-    <dependencies>
-        <!--			javafx dependencies-->
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>17.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
-            <version>17.0.2</version>
-        </dependency>
-    </dependencies>
     <dependencyManagement>
         <dependencies>
+            <!--		javafx dependencies-->
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-controls</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-fxml</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-swing</artifactId>
+                <version>${javafx.version}</version>
+            </dependency>
             <dependency>
                 <groupId>de.saxsys</groupId>
                 <artifactId>mvvmfx</artifactId>
@@ -172,7 +180,7 @@
             <dependency>
                 <groupId>org.jboss.weld.se</groupId>
                 <artifactId>weld-se-core</artifactId>
-                <version>3.0.0.Final</version>
+                <version>5.1.0.Final</version>
             </dependency>
             <dependency>
                 <groupId>com.cathive.fx</groupId>

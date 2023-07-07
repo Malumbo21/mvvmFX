@@ -2,6 +2,7 @@ package de.saxsys.mvvmfx.examples.contacts.model.countries;
 
 import de.saxsys.mvvmfx.examples.contacts.model.Country;
 import de.saxsys.mvvmfx.examples.contacts.model.Subdivision;
+import jakarta.annotation.PostConstruct;
 import javafx.beans.property.ReadOnlyBooleanProperty;
 import javafx.beans.property.ReadOnlyBooleanWrapper;
 import javafx.beans.property.ReadOnlyStringProperty;
@@ -17,9 +18,8 @@ import org.datafx.reader.converter.XmlConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Alternative;
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;

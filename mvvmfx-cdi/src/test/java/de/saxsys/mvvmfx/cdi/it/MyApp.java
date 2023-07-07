@@ -6,7 +6,7 @@ import de.saxsys.mvvmfx.cdi.MvvmfxCdiApplication;
 import javafx.application.Platform;
 import javafx.stage.Stage;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 public class MyApp extends MvvmfxCdiApplication {

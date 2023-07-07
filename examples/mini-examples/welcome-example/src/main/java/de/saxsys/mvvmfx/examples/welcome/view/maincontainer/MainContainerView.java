@@ -12,7 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.StackPane;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import de.saxsys.mvvmfx.examples.welcome.view.personlogin.PersonLoginView;
 import de.saxsys.mvvmfx.examples.welcome.view.personwelcome.PersonWelcomeView;

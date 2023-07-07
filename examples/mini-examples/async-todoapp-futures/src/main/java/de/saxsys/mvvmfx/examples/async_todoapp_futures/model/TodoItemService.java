@@ -1,7 +1,7 @@
 package de.saxsys.mvvmfx.examples.async_todoapp_futures.model;
 
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 import java.util.List;
 
 @Singleton

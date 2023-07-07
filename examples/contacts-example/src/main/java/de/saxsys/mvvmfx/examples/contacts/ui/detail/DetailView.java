@@ -1,6 +1,6 @@
 package de.saxsys.mvvmfx.examples.contacts.ui.detail;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import de.jensd.fx.fontawesome.AwesomeDude;
 import de.jensd.fx.fontawesome.AwesomeIcon;

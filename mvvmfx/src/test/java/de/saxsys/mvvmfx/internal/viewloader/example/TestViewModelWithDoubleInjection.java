@@ -17,7 +17,7 @@ package de.saxsys.mvvmfx.internal.viewloader.example;
 
 import de.saxsys.mvvmfx.ViewModel;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 
 /**
  * Created by Sven on 23/06/16.

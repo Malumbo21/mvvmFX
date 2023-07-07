@@ -5,7 +5,7 @@ import javafx.beans.binding.StringBinding;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import de.saxsys.mvvmfx.examples.welcome.model.Gender;
 import de.saxsys.mvvmfx.examples.welcome.model.Person;

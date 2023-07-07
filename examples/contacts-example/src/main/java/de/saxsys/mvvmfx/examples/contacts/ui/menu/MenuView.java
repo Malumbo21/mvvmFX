@@ -1,6 +1,6 @@
 package de.saxsys.mvvmfx.examples.contacts.ui.menu;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import de.saxsys.mvvmfx.FluentViewLoader;
 import de.saxsys.mvvmfx.FxmlView;

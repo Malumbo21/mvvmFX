@@ -10,7 +10,7 @@ import de.saxsys.mvvmfx.FluentViewLoader;
 import de.saxsys.mvvmfx.ViewTuple;
 import de.saxsys.mvvmfx.guice.MvvmfxGuiceApplication;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import java.util.List;
 
 

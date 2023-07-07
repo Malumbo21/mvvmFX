@@ -46,6 +46,15 @@
     </build>
 
 	<dependencies>
+		<!--		javafx dependencies-->
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>de.saxsys</groupId>
 			<artifactId>mvvmfx</artifactId>

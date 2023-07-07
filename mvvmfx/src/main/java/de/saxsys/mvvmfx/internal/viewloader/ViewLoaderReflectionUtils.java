@@ -409,7 +409,7 @@ public class ViewLoaderReflectionUtils {
             final boolean postConstructPresent = Arrays.stream(initMethod.getAnnotations())
                     .map(Annotation::annotationType)
                     .map(Class::getName)
-                    .anyMatch("javax.annotation.PostConstruct"::equals);
+                    .anyMatch("jakarta.annotation.PostConstruct"::equals);
 
             if(postConstructPresent) {
 				throw new IllegalStateException(String.format("initialize method of ViewModel [%s] is annotated with @PostConstruct. " +

@@ -3,8 +3,8 @@ package de.saxsys.mvvmfx.examples.contacts.model;
 import de.saxsys.mvvmfx.examples.contacts.events.ContactsUpdatedEvent;
 
 import javax.enterprise.event.Event;
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Optional;

@@ -8,7 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import de.saxsys.mvvmfx.examples.welcome.viewmodel.personwelcome.PersonWelcomeViewModel;
 import de.saxsys.mvvmfx.FxmlView;

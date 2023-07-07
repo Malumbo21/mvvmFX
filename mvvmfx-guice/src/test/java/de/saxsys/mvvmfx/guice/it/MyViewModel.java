@@ -2,7 +2,7 @@ package de.saxsys.mvvmfx.guice.it;
 
 import de.saxsys.mvvmfx.ViewModel;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import java.util.function.Supplier;
 
 import static org.assertj.core.api.Assertions.assertThat;

@@ -1,6 +1,6 @@
 package de.saxsys.mvvmfx.examples.contacts.ui.about;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import de.saxsys.mvvmfx.ViewModel;
 import javafx.application.HostServices;

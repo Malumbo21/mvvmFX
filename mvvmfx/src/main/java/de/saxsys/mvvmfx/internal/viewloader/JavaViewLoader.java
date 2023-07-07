@@ -169,8 +169,8 @@ public class JavaViewLoader {
                             NAMING_CONVENTION_INITIALIZE_IDENTIFIER, view);
 
                     Throwable cause = e.getCause();
-                    if (cause instanceof RuntimeException) {
-                        throw (RuntimeException) cause;
+                    if (cause instanceof RuntimeException r) {
+                        throw r;
                     } else {
                         throw new RuntimeException(cause);
                     }

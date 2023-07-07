@@ -7,7 +7,7 @@ import de.saxsys.mvvmfx.examples.scopesexample.ui.documentdetails.DetailsScope;
 import de.saxsys.mvvmfx.examples.scopesexample.ui.overview.OverviewScope;
 import de.saxsys.mvvmfx.utils.notifications.NotificationCenter;
 
-import javax.inject.Provider;
+import jakarta.inject.Provider;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;

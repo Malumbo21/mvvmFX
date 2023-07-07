@@ -1,6 +1,6 @@
 package de.saxsys.mvvmfx.examples.contacts.ui.about;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import de.saxsys.mvvmfx.FxmlView;
 import de.saxsys.mvvmfx.InjectViewModel;

@@ -3,7 +3,7 @@ package de.saxsys.mvvmfx.examples.welcome.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 /**
  * Service class for providing some dummy data.

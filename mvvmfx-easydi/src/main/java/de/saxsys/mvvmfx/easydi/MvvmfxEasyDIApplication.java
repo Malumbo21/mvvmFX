@@ -18,11 +18,10 @@ package de.saxsys.mvvmfx.easydi;
 import de.saxsys.mvvmfx.MvvmFX;
 import de.saxsys.mvvmfx.internal.MvvmfxApplication;
 import eu.lestard.easydi.EasyDI;
+import jakarta.inject.Provider;
 import javafx.application.Application;
 import javafx.application.HostServices;
 import javafx.stage.Stage;
-
-import javax.inject.Provider;
 
 /**
  * This class has to be extended by the user to build a javaFX application

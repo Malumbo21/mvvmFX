@@ -16,6 +16,7 @@
 	<modules>
 		<module>contacts-example</module>
 		<module>books-example</module>
+		<module>jigsaw-example</module>
 		<module>todomvc-example</module>
 		<module>mini-examples</module>
     </modules>
@@ -23,6 +24,10 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>eu.lestard</groupId>
+				<artifactId>easy-di</artifactId>
+			</dependency>
 			<dependency>
 				<groupId>de.saxsys.mvvmfx</groupId>
 				<artifactId>mini-examples</artifactId>

@@ -52,6 +52,21 @@
             <groupId>eu.lestard</groupId>
             <artifactId>advanced-bindings</artifactId>
         </dependency>
+        <dependency>
+            <groupId>eu.lestard</groupId>
+            <artifactId>easy-di</artifactId>
+            <version>0.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>eu.lestard</groupId>
+            <artifactId>doc-annotations</artifactId>
+            <version>0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>net.jodah</groupId>
+            <artifactId>typetools</artifactId>
+            <version>0.6.3</version>
+        </dependency>
 
         <!-- Backend -->
         <dependency>

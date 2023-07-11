@@ -58,7 +58,7 @@ public interface ViewModel {
 	 * @param messageName
 	 *            of the notification
 	 * @param payload
-	 *            to be send
+	 *            to be sent
 	 */
 	default void publish(String messageName, Object... payload) {
 		MvvmFX.getNotificationCenter().publish(System.identityHashCode(this), messageName, payload);

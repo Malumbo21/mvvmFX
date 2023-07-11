@@ -46,7 +46,4 @@ public class App extends MvvmfxEasyDIApplication {
 		FlatterFX.style(FlatterInputType.DEFAULT);
 	}
 
-	public static void main(String[] args) {
-		launch(args);
-	}
 }

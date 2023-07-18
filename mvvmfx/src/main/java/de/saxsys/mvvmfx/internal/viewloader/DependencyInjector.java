@@ -17,6 +17,8 @@ package de.saxsys.mvvmfx.internal.viewloader;
 
 import javafx.util.Callback;
 
+import java.lang.reflect.InvocationTargetException;
+
 /**
  * This class handles the dependency injection for the mvvmFX framework.
  *
@@ -71,8 +73,11 @@ public class DependencyInjector {
 		} else {
 			try {
 				// use default creation
-				return type.newInstance();
-			} catch (InstantiationException | IllegalAccessException e) {
+				return type.getDeclaredConstructor().newInstance();
+			} catch (InstantiationException
+					 | IllegalAccessException
+					 | NoSuchMethodException
+					 | InvocationTargetException e) {
 				throw new RuntimeException("Can't create instance of type " + type.getName() +
 						". Make sure that the class has a public no-arg constructor.", e);
 			}

@@ -8,7 +8,7 @@ import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import javax.enterprise.event.Observes;
+import jakarta.enterprise.event.Observes;
 import jakarta.inject.Inject;
 
 import org.slf4j.Logger;
@@ -49,7 +49,7 @@ public class App extends MvvmfxCdiApplication {
 	}
 
 	@Override
-	public void startMvvmfx(Stage stage) throws Exception {
+	public void startMvvmfx(Stage stage) {
 		LOG.info("Starting the Application");
 		MvvmFX.setGlobalResourceBundle(resourceBundle);
 

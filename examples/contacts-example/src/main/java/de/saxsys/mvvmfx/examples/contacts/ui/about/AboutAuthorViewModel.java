@@ -11,7 +11,7 @@ public class AboutAuthorViewModel implements ViewModel {
 	private HostServices hostServices;
 
 	public void openBlog() {
-		hostServices.showDocument("http://www.lestard.eu");
+		hostServices.showDocument("https://www.lestard.eu");
 	}
 
 	public void openTwitter() {

@@ -43,7 +43,7 @@ public class App extends MvvmfxEasyDIApplication {
 		scene.setFill(Color.TRANSPARENT);
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		FlatterFX.style(FlatterInputType.DEFAULT);
+		//FlatterFX.style(FlatterInputType.DEFAULT);
 	}
 
 }

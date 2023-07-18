@@ -17,7 +17,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import jakarta.annotation.PostConstruct;
-import javax.enterprise.inject.Alternative;
+import jakarta.enterprise.inject.Alternative;
 import jakarta.inject.Singleton;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;

@@ -1,4 +1,4 @@
-open module mvvmfx {
+module mvvmfx {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.swing;
@@ -12,5 +12,5 @@ open module mvvmfx {
     exports de.saxsys.mvvmfx.utils.commands;
     exports de.saxsys.mvvmfx.utils.itemlist;
     exports de.saxsys.mvvmfx.utils.mapping;
-
+    exports de.saxsys.mvvmfx.utils.mapping.accessorfunctions;
 }

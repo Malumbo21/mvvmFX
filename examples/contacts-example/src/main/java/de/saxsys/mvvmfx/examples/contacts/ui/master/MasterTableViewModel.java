@@ -6,7 +6,6 @@ import java.time.temporal.ChronoUnit;
 import de.saxsys.mvvmfx.examples.contacts.model.Contact;
 import de.saxsys.mvvmfx.examples.contacts.util.CentralClock;
 import de.saxsys.mvvmfx.utils.mapping.ModelWrapper;
-import de.saxsys.mvvmfx.utils.mapping.accessorfunctions.StringGetter;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.StringProperty;

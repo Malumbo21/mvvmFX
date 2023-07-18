@@ -4,7 +4,7 @@ import de.saxsys.mvvmfx.Scope;
 import de.saxsys.mvvmfx.ViewModel;
 import de.saxsys.mvvmfx.examples.contacts.ui.scopes.ContactDialogScope;
 
-import javax.enterprise.inject.Instance;
+import jakarta.enterprise.inject.Instance;
 import jakarta.inject.Inject;
 import java.util.Collections;
 import java.util.List;

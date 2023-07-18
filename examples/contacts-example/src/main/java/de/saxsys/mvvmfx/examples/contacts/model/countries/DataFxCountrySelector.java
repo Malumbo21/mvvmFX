@@ -18,7 +18,7 @@ import org.datafx.reader.converter.XmlConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.enterprise.inject.Alternative;
+import jakarta.enterprise.inject.Alternative;
 import jakarta.inject.Singleton;
 import java.io.IOException;
 import java.io.InputStream;
@@ -55,15 +55,15 @@ public class DataFxCountrySelector implements CountrySelector {
 
 	public static final String ISO_3166_LOCATION = "/countries/iso_3166.xml";
 	public static final String ISO_3166_2_LOCATION = "/countries/iso_3166_2.xml";
-	private ObservableList<Country> countries = FXCollections.observableArrayList();
-	private ObservableList<Subdivision> subdivisions = FXCollections.observableArrayList();
+	private final ObservableList<Country> countries = FXCollections.observableArrayList();
+	private final ObservableList<Subdivision> subdivisions = FXCollections.observableArrayList();
 
-	private ReadOnlyStringWrapper subdivisionLabel = new ReadOnlyStringWrapper();
+	private final ReadOnlyStringWrapper subdivisionLabel = new ReadOnlyStringWrapper();
 
-	private ReadOnlyBooleanWrapper inProgress = new ReadOnlyBooleanWrapper(false);
+	private final ReadOnlyBooleanWrapper inProgress = new ReadOnlyBooleanWrapper(false);
 
-	private Map<Country, List<Subdivision>> countryCodeSubdivisionMap = new HashMap<>();
-	private Map<Country, String> countryCodeSubdivisionNameMap = new HashMap<>();
+	private final Map<Country, List<Subdivision>> countryCodeSubdivisionMap = new HashMap<>();
+	private final Map<Country, String> countryCodeSubdivisionNameMap = new HashMap<>();
 
 	/**
 	 * This method triggers the loading of the available countries and

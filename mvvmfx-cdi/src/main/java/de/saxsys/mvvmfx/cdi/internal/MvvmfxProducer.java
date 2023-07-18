@@ -19,7 +19,8 @@ import javafx.application.Application;
 import javafx.application.HostServices;
 import javafx.stage.Stage;
 
-import javax.enterprise.inject.Produces;
+
+import jakarta.enterprise.inject.Produces;
 import jakarta.inject.Singleton;
 
 import de.saxsys.mvvmfx.MvvmFX;

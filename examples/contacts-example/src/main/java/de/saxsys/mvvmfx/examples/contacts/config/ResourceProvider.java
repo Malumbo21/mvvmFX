@@ -1,6 +1,6 @@
 package de.saxsys.mvvmfx.examples.contacts.config;
 
-import javax.enterprise.inject.Produces;
+import jakarta.enterprise.inject.Produces;
 import jakarta.inject.Singleton;
 import java.util.ResourceBundle;
 

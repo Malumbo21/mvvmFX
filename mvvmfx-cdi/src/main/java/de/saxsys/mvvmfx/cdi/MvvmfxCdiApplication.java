@@ -19,11 +19,11 @@ import de.saxsys.mvvmfx.internal.MvvmfxApplication;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-import javax.enterprise.context.spi.CreationalContext;
-import javax.enterprise.inject.se.SeContainer;
-import javax.enterprise.inject.se.SeContainerInitializer;
-import javax.enterprise.inject.spi.BeanManager;
-import javax.enterprise.inject.spi.InjectionTarget;
+import jakarta.enterprise.context.spi.CreationalContext;
+import jakarta.enterprise.inject.se.SeContainer;
+import jakarta.enterprise.inject.se.SeContainerInitializer;
+import jakarta.enterprise.inject.spi.BeanManager;
+import jakarta.enterprise.inject.spi.InjectionTarget;
 import jakarta.inject.Inject;
 
 import de.saxsys.mvvmfx.MvvmFX;

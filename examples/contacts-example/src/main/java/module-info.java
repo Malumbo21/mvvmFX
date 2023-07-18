@@ -4,5 +4,18 @@ module contacts.example {
     requires javafx.graphics;
     requires java.base;
     requires java.desktop;
-    opens de.saxsys.mvvmfx.examples.contacts.ui to javafx.fxml,javafx.graphics;
+    requires mvvmfx;
+    requires jakarta.inject;
+    requires slf4j.api;
+    requires mvvmfx.cdi;
+    requires jakarta.xml.bind;
+    requires datafx.core;
+    requires datafx.datareader;
+    requires jakarta.annotation;
+    requires org.controlsfx.controls;
+    requires fontawesomefx;
+    requires mvvmfx.validation;
+    requires advanced.bindings;
+    requires cdi.api;
+    opens de.saxsys.mvvmfx.examples.contacts to javafx.fxml,javafx.graphics;
 }

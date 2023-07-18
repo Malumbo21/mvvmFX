@@ -7,7 +7,7 @@ import javafx.application.Platform;
 import javafx.stage.Stage;
 
 import jakarta.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
+import jakarta.annotation.PreDestroy;
 
 public class MyApp extends MvvmfxCdiApplication {
 	

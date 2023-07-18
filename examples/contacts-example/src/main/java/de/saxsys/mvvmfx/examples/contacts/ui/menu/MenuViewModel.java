@@ -1,6 +1,6 @@
 package de.saxsys.mvvmfx.examples.contacts.ui.menu;
 
-import javax.enterprise.event.Event;
+import jakarta.enterprise.event.Event;
 import jakarta.inject.Inject;
 
 import de.saxsys.mvvmfx.InjectScope;

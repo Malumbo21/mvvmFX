@@ -4,7 +4,7 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.function.Consumer;
 
-import javax.enterprise.event.Observes;
+import jakarta.enterprise.event.Observes;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 

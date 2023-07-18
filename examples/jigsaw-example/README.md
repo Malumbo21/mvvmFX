@@ -37,9 +37,9 @@ the main project would fail.
              <plugin>
                  <groupId>org.apache.maven.plugins</groupId>
                  <artifactId>maven-compiler-plugin</artifactId>
-                 <version>3.8.0</version>
+                 <version>3.10.1</version>
                  <configuration>
-                     <release>11</release>
+                     <release>${java.version}</release>
                  </configuration>
              </plugin>
          </plugins>

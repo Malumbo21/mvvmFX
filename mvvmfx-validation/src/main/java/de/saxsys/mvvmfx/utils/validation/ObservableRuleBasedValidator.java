@@ -60,10 +60,10 @@ public class ObservableRuleBasedValidator implements Validator {
     To prevent this we store references to all given rules here.
     Don't get confused by the fact that no values are only added to these lists but not obtained.
      */
-	private List<ObservableValue<Boolean>> booleanRules = new ArrayList<>();
-    private List<ObservableValue<ValidationMessage>> complexRules = new ArrayList<>();
+	private final List<ObservableValue<Boolean>> booleanRules = new ArrayList<>();
+    private final List<ObservableValue<ValidationMessage>> complexRules = new ArrayList<>();
 	
-	private ValidationStatus validationStatus = new ValidationStatus();
+	private final ValidationStatus validationStatus = new ValidationStatus();
 
     /**
      * Creates an instance of the Validator without any rules predefined.

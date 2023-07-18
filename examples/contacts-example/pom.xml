@@ -86,6 +86,12 @@
 		<dependency>
 			<groupId>de.saxsys</groupId>
 			<artifactId>mvvmfx-cdi</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.javafxdata</groupId>
+					<artifactId>datafx-core</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.jboss.weld.se</groupId>
@@ -176,6 +182,6 @@
 			<groupId>de.saxsys</groupId>
 			<artifactId>mvvmfx-validation</artifactId>
 		</dependency>
-	</dependencies>
 
+	</dependencies>
 </project>

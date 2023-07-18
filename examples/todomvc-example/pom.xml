@@ -11,18 +11,6 @@
 
 	<artifactId>todomvc-example</artifactId>
 
-	<!-- use resource files (fxml, css) from the java directory -->
-	<build>
-		<resources>
-			<resource>
-				<directory>src/main/java</directory>
-			</resource>
-			<resource>
-				<directory>src/main/resources</directory>
-			</resource>
-		</resources>
-	</build>
-
 	<dependencies>
 		<dependency>
 			<groupId>de.saxsys</groupId>
@@ -39,4 +27,39 @@
 			<version>8.9</version>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.1</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>17</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>0.0.8</version>
+				<executions>
+					<execution>
+						<!-- Default configuration for running with: mvn clean javafx:run -->
+						<id>default-cli</id>
+						<configuration>
+							<mainClass>
+								de.saxsys.mvvmfx.examples.todomvc/de.saxsys.mvvmfx.examples.todomvc.App
+							</mainClass>
+							<launcher>app</launcher>
+							<jlinkZipName>app</jlinkZipName>
+							<jlinkImageName>app</jlinkImageName>
+							<noManPages>true</noManPages>
+							<stripDebug>true</stripDebug>
+							<noHeaderFiles>true</noHeaderFiles>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>

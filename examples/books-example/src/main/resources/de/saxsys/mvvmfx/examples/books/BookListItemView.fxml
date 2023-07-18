@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 
 <HBox alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-	  spacing="6.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	  spacing="6.0" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1"
 	  fx:controller="de.saxsys.mvvmfx.examples.books.BookListItemView">
 	<children>
 		<Label fx:id="titleLabel" style="-fx-font-size: 1.1em;" text="Title"/>

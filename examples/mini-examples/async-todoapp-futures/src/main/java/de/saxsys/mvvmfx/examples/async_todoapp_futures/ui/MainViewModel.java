@@ -15,8 +15,8 @@ public class MainViewModel implements ViewModel {
     @InjectScope
     private TodoScope todoScope;
 
-    private ReadOnlyStringWrapper errorText = new ReadOnlyStringWrapper();
-    private ReadOnlyBooleanWrapper errorVisible = new ReadOnlyBooleanWrapper();
+    private final ReadOnlyStringWrapper errorText = new ReadOnlyStringWrapper();
+    private final ReadOnlyBooleanWrapper errorVisible = new ReadOnlyBooleanWrapper();
 
     public void initialize() {
         errorText.bind(Bindings.createStringBinding(() -> {

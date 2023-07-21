@@ -13,17 +13,25 @@
 
     <dependencies>
         <dependency>
-            <groupId>de.saxsys</groupId>
-            <artifactId>mvvmfx</artifactId>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
         </dependency>
         <dependency>
             <groupId>de.saxsys</groupId>
-            <artifactId>mvvmfx-easydi</artifactId>
+            <artifactId>mvvmfx</artifactId>
         </dependency>
         <dependency>
             <groupId>org.fxmisc.easybind</groupId>
             <artifactId>easybind</artifactId>
             <version>1.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>de.saxsys</groupId>
+            <artifactId>mvvmfx-easydi</artifactId>
         </dependency>
     </dependencies>
     <build>

@@ -279,8 +279,12 @@ public class FxmlViewLoader {
 			List<BuilderFactory> builderFactories) throws IOException {
         // Load FXML file
 
-        Class<?> resourceLoaderClass = resourceLoader == null ? FxmlViewLoader.class : resourceLoader;
-        final URL location = resourceLoaderClass.getResource(resource);
+        var resourceLoaderProvided = resourceLoader == null;
+        Class<?> resourceLoaderClass = resourceLoaderProvided ? FxmlViewLoader.class : resourceLoader;
+        System.err.println("----------------------------------------");
+        System.err.println(resourceLoaderClass.getName());
+        System.err.println("----------------------------------------");
+        final var location = resourceLoaderClass.getResource(resource);
         if (location == null) {
             throw new IOException("Error loading FXML - can't load from given resourcepath: " + resource);
         }

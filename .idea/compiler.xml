@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/mvvmfx-archetype/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="helloworld-spring-boot" />
+        <module name="helloworld" />
+        <module name="jigsaw-example-rectangle" />
+        <module name="mvvmfx-validation" />
+        <module name="helloworld-custom-fxml-path" />
+        <module name="mvvmfx" />
+        <module name="books-example" />
+        <module name="async-todoapp-futures" />
+        <module name="contacts-example" />
+        <module name="todomvc-example" />
+        <module name="mvvmfx-easydi" />
+        <module name="mvvmfx-cdi" />
+        <module name="mvvmfx-archetype" />
+        <module name="mvvmfx-testing-utils" />
+        <module name="scopes-example" />
+        <module name="helloworld-without-fxml" />
+        <module name="synchronizefx-example" />
+        <module name="jigsaw-example-app" />
+        <module name="mvvmfx-spring-boot" />
+        <module name="mvvmfx-utils" />
+        <module name="mvvmfx-guice" />
+        <module name="fx-root-example" />
+        <module name="welcome-example" />
+        <module name="jigsaw-example-circle" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

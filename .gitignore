@@ -18,5 +18,5 @@ target
 
 
 # intelliJ #
-.idea
+#.idea
 *.iml

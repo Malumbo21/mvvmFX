@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/examples/books-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/books-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/contacts-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/contacts-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/async-todoapp-futures/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/async-todoapp-futures/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/fx-root-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/fx-root-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/helloworld-custom-fxml-path/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/helloworld-custom-fxml-path/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/helloworld-spring-boot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/helloworld-without-fxml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/helloworld-without-fxml/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/helloworld/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/helloworld/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/scopes-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/synchronizefx-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/synchronizefx-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/welcome-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/mini-examples/welcome-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/todomvc-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/todomvc-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-archetype/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-cdi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-cdi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-easydi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-easydi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-guice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-guice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-spring-boot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-spring-boot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-testing-utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-testing-utils/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-utils/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-validation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx-validation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvvmfx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

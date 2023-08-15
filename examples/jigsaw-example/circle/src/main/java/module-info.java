@@ -6,7 +6,7 @@ module de.saxsys.mvvmfx.examples.jigsaw.circle {
     requires javafx.controls;
     requires javafx.graphics;
     requires de.saxsys.mvvmfx;
-    requires mvvmfx;
+    requires de.saxsys.mvvmfx;
 
     exports de.saxsys.mvvmfx.examples.jigsaw.circle;
 

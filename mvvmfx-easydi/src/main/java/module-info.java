@@ -1,5 +1,5 @@
 open module mvvmfx.easydi {
-    requires mvvmfx;
+    requires de.saxsys.mvvmfx;
     requires javafx.fxml;
     requires javafx.controls;
     requires eu.lestard.easydi;

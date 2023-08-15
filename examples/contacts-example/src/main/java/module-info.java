@@ -4,7 +4,7 @@ module contacts.example {
     requires javafx.graphics;
     requires java.base;
     requires java.desktop;
-    requires mvvmfx;
+    requires de.saxsys.mvvmfx;
     requires jakarta.inject;
     requires slf4j.api;
     requires mvvmfx.cdi;

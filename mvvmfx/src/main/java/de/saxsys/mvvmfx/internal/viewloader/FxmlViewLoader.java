@@ -32,6 +32,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.net.URI;
 import java.net.URL;
 import java.util.Collection;
 import java.util.List;
@@ -42,7 +43,7 @@ import java.util.function.Consumer;
 /**
  * This viewLoader is used to load views that are implementing
  * {@link de.saxsys.mvvmfx.FxmlView}.
- * 
+ *
  * @author manuel.mauky
  */
 public class FxmlViewLoader {
@@ -52,31 +53,24 @@ public class FxmlViewLoader {
     /**
      * Load the viewTuple by it`s ViewType.
      *
-     * @param viewType
-     *            the type of the view to be loaded.
-     * @param resourceBundle
-     *            the resourceBundle that is passed to the
-     *            {@link javafx.fxml.FXMLLoader}.
-     * @param codeBehind
-     *            the controller instance that is passed to the
-     *            {@link javafx.fxml.FXMLLoader}
-     * @param root
-     *            the root object that is passed to the
-     *            {@link javafx.fxml.FXMLLoader}
-     * @param viewModel
-     *            the viewModel instance that is used when loading the
-     *            viewTuple.
-     * @param <ViewType>
-     *            the generic type of the view.
-     * @param <ViewModelType>
-     *            the generic type of the viewModel.
+     * @param viewType         the type of the view to be loaded.
+     * @param resourceBundle   the resourceBundle that is passed to the
+     *                         {@link javafx.fxml.FXMLLoader}.
+     * @param codeBehind       the controller instance that is passed to the
+     *                         {@link javafx.fxml.FXMLLoader}
+     * @param root             the root object that is passed to the
+     *                         {@link javafx.fxml.FXMLLoader}
+     * @param viewModel        the viewModel instance that is used when loading the
+     *                         viewTuple.
+     * @param <ViewType>       the generic type of the view.
+     * @param <ViewModelType>  the generic type of the viewModel.
      * @param builderFactories a list of custom builder factories. may be <code>null</code>
-	 * @return the loaded ViewTuple.
+     * @return the loaded ViewTuple.
      */
     public <ViewType extends View<? extends ViewModelType>, ViewModelType extends ViewModel> ViewTuple<ViewType, ViewModelType> loadFxmlViewTuple(
-			Class<? extends ViewType> viewType, ResourceBundle resourceBundle, ViewType codeBehind, Object root,
-			ViewModelType viewModel, Context context, Collection<Scope> providedScopes,
-			List<BuilderFactory> builderFactories) {
+            Class<? extends ViewType> viewType, ResourceBundle resourceBundle, ViewType codeBehind, Object root,
+            ViewModelType viewModel, Context context, Collection<Scope> providedScopes,
+            List<BuilderFactory> builderFactories) {
 
         final String pathToFXML = createFxmlPath(viewType);
         return loadFxmlViewTuple(viewType, pathToFXML, resourceBundle, codeBehind, root, viewModel, context, providedScopes, builderFactories);
@@ -85,22 +79,21 @@ public class FxmlViewLoader {
     /**
      * This method is used to create a String with the path to the FXML file for
      * a given View class.
-     *
+     * <p>
      * This is done by taking the package of the view class (if any) and replace
      * "." with "/". After that the Name of the class and the file ending
      * ".fxml" is appended.
-     *
+     * <p>
      * If the View class is annotated with @FxmlPath then the String path supplied
      * in the annotation  value will be used.
-     *
+     * <p>
      * Example: de.saxsys.myapp.ui.MainView as view class will be transformed to
      * "/de/saxsys/myapp/ui/MainView.fxml"
-     *
+     * <p>
      * Example 2: MainView (located in the default package) will be transformed
      * to "/MainView.fxml"
      *
-     * @param viewType
-     *            the view class type.
+     * @param viewType the view class type.
      * @return the path to the fxml file as string.
      */
     private String createFxmlPath(Class<?> viewType) {
@@ -133,24 +126,17 @@ public class FxmlViewLoader {
     /**
      * Load the viewTuple by the path of the fxml file.
      *
-     * @param resource
-     *            the string path to the fxml file that is loaded.
-     * @param resourceBundle
-     *            the resourceBundle that is passed to the
-     *            {@link javafx.fxml.FXMLLoader}.
-     * @param codeBehind
-     *            the controller instance that is passed to the
-     *            {@link javafx.fxml.FXMLLoader}
-     * @param root
-     *            the root object that is passed to the
-     *            {@link javafx.fxml.FXMLLoader}
-     * @param viewModel
-     *            the viewModel instance that is used when loading the
-     *            viewTuple.
-     * @param <ViewType>
-     *            the generic type of the view.
-     * @param <ViewModelType>
-     *            the generic type of the viewModel.
+     * @param resource         the string path to the fxml file that is loaded.
+     * @param resourceBundle   the resourceBundle that is passed to the
+     *                         {@link javafx.fxml.FXMLLoader}.
+     * @param codeBehind       the controller instance that is passed to the
+     *                         {@link javafx.fxml.FXMLLoader}
+     * @param root             the root object that is passed to the
+     *                         {@link javafx.fxml.FXMLLoader}
+     * @param viewModel        the viewModel instance that is used when loading the
+     *                         viewTuple.
+     * @param <ViewType>       the generic type of the view.
+     * @param <ViewModelType>  the generic type of the viewModel.
      * @param builderFactories a list of custom builder factories. may be <code>null</code>
      * @return the loaded ViewTuple.
      */
@@ -168,40 +154,32 @@ public class FxmlViewLoader {
                 parentContext,
                 providedScopes,
                 builderFactories
-                );
+        );
 
     }
 
     /**
      * Load the viewTuple by the path of the fxml file.
      *
-     * @param resourceLoader
-     *            class used to load resource. When null {@link FxmlViewLoader} is used
-     * @param resource
-     *            the string path to the fxml file that is loaded.
-     * @param resourceBundle
-     *            the resourceBundle that is passed to the
-     *            {@link javafx.fxml.FXMLLoader}.
-     * @param codeBehind
-     *            the controller instance that is passed to the
-     *            {@link javafx.fxml.FXMLLoader}
-     * @param root
-     *            the root object that is passed to the
-     *            {@link javafx.fxml.FXMLLoader}
-     * @param viewModel
-     *            the viewModel instance that is used when loading the
-     *            viewTuple.
-     * @param <ViewType>
-     *            the generic type of the view.
-     * @param <ViewModelType>
-     *            the generic type of the viewModel.
+     * @param resourceLoader   class used to load resource. When null {@link FxmlViewLoader} is used
+     * @param resource         the string path to the fxml file that is loaded.
+     * @param resourceBundle   the resourceBundle that is passed to the
+     *                         {@link javafx.fxml.FXMLLoader}.
+     * @param codeBehind       the controller instance that is passed to the
+     *                         {@link javafx.fxml.FXMLLoader}
+     * @param root             the root object that is passed to the
+     *                         {@link javafx.fxml.FXMLLoader}
+     * @param viewModel        the viewModel instance that is used when loading the
+     *                         viewTuple.
+     * @param <ViewType>       the generic type of the view.
+     * @param <ViewModelType>  the generic type of the viewModel.
      * @param builderFactories a list of custom builder factories. may be <code>null</code>
-	 * @return the loaded ViewTuple.
+     * @return the loaded ViewTuple.
      */
-    private  <ViewType extends View<? extends ViewModelType>, ViewModelType extends ViewModel> ViewTuple<ViewType, ViewModelType> loadFxmlViewTuple(
-			final Class<?> resourceLoader, final String resource, ResourceBundle resourceBundle, final ViewType codeBehind, final Object root,
-			ViewModelType viewModel, Context parentContext, Collection<Scope> providedScopes,
-			List<BuilderFactory> builderFactories) {
+    private <ViewType extends View<? extends ViewModelType>, ViewModelType extends ViewModel> ViewTuple<ViewType, ViewModelType> loadFxmlViewTuple(
+            final Class<?> resourceLoader, final String resource, ResourceBundle resourceBundle, final ViewType codeBehind, final Object root,
+            ViewModelType viewModel, Context parentContext, Collection<Scope> providedScopes,
+            List<BuilderFactory> builderFactories) {
         try {
 
             // FIXME Woanders hin?
@@ -275,8 +253,8 @@ public class FxmlViewLoader {
     }
 
     private FXMLLoader createFxmlLoader(Class<?> resourceLoader, String resource, ResourceBundle resourceBundle, View codeBehind, Object root,
-			ViewModel viewModel, ContextImpl context, ObservableBooleanValue viewInSceneProperty,
-			List<BuilderFactory> builderFactories) throws IOException {
+                                        ViewModel viewModel, ContextImpl context, ObservableBooleanValue viewInSceneProperty,
+                                        List<BuilderFactory> builderFactories) throws IOException {
         // Load FXML file
 
         var resourceLoaderProvided = resourceLoader == null;
@@ -284,6 +262,7 @@ public class FxmlViewLoader {
         System.err.println("----------------------------------------");
         System.err.println(resourceLoaderClass.getName());
         System.err.println("----------------------------------------");
+        System.out.println(resourceLoaderClass.getName());
         final var location = resourceLoaderClass.getResource(resource);
         if (location == null) {
             throw new IOException("Error loading FXML - can't load from given resourcepath: " + resource);
@@ -295,12 +274,12 @@ public class FxmlViewLoader {
         fxmlLoader.setResources(resourceBundle);
         fxmlLoader.setLocation(location);
 
-        if(builderFactories == null || builderFactories.isEmpty()) {
-        	fxmlLoader.setBuilderFactory(GlobalBuilderFactory.getInstance());
-		} else {
-			BuilderFactory factory = GlobalBuilderFactory.getInstance().mergeWith(builderFactories);
-			fxmlLoader.setBuilderFactory(factory);
-		}
+        if (builderFactories == null || builderFactories.isEmpty()) {
+            fxmlLoader.setBuilderFactory(GlobalBuilderFactory.getInstance());
+        } else {
+            BuilderFactory factory = GlobalBuilderFactory.getInstance().mergeWith(builderFactories);
+            fxmlLoader.setBuilderFactory(factory);
+        }
 
 
         // when the user provides a viewModel but no codeBehind, we need to use
@@ -383,7 +362,7 @@ public class FxmlViewLoader {
     }
 
     private static void handleInjection(View codeBehind, ResourceBundle resourceBundle, ViewModel viewModel,
-            ContextImpl context, ObservableBooleanValue viewInSceneProperty) {
+                                        ContextImpl context, ObservableBooleanValue viewInSceneProperty) {
         ViewLoaderReflectionUtils.checkScopesInView(codeBehind);
 
         ResourceBundleInjector.injectResourceBundle(codeBehind, resourceBundle);
@@ -401,25 +380,25 @@ public class FxmlViewLoader {
     /**
      * A controller factory that is used for the special case where the user
      * provides an existing viewModel to be used while loading.
-     * 
+     * <p>
      * This factory will use this existing viewModel instance for injection of
      * the <strong>first</strong> view that is requested from this factory. For
      * all later requests this factory will work the same way as the default
      * factory
      * {@link de.saxsys.mvvmfx.internal.viewloader.FxmlViewLoader.DefaultControllerFactory}
      * .
-     * 
+     * <p>
      * The problem we are facing here is the following: The user wants to load a
      * specific View with a specific ViewModel instance. But this root View
      * (fxml file) can declare other sub views. Only the root View has to get
      * the existing ViewModel instance, all other sub Views have to get their
      * ViewModels via the default way (i.e. DependencyInjection or a new
      * instance every time).
-     * 
+     * <p>
      * But, from the perspective of the controller factory, when a View instance
      * is requested, we can't know if this is the root View or a sub View. How
      * do we know when to use the existing ViewModel instance?
-     * 
+     * <p>
      * To fix this we depend on the standard JavaFX behaviour of the
      * {@link FXMLLoader}: The first instance that the FXMLLoader will request
      * from the controller factory will always be the controller for the root
@@ -438,7 +417,7 @@ public class FxmlViewLoader {
         private ObservableBooleanValue viewInSceneProperty;
 
         public ControllerFactoryForCustomViewModel(ViewModel customViewModel, ResourceBundle resourceBundle,
-                ContextImpl context, ObservableBooleanValue viewInSceneProperty) {
+                                                   ContextImpl context, ObservableBooleanValue viewInSceneProperty) {
             this.customViewModel = customViewModel;
             this.resourceBundle = resourceBundle;
             this.context = context;

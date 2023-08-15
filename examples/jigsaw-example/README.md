@@ -60,7 +60,7 @@ This module descriptor contains informations on which other packages are require
 other packages.
 
 ```Java
-module de.saxsys.mvvmfx.examples.jigsaw.app{
+module de.saxsys.mvvmfx.examples.jigsaw.app {
 
     requires de.saxsys.mvvmfx.examples.jigsaw.circle;
     requires de.saxsys.mvvmfx.examples.jigsaw.rectangle;
@@ -72,7 +72,7 @@ module de.saxsys.mvvmfx.examples.jigsaw.app{
 
     exports de.saxsys.mvvmfx.examples.jigsaw.app to javafx.graphics;
 
-    opens de.saxsys.mvvmfx.examples.jigsaw.app to mvvmfx, javafx.fxml;
+    opens de.saxsys.mvvmfx.examples.jigsaw.app to de.saxsys.mvvmfx, javafx.fxml;
 }
 ```
 ##### Instructions

@@ -8,7 +8,7 @@ module de.saxsys.mvvmfx.examples.jigsaw.app{
     requires javafx.controls;
     requires javafx.graphics;
     requires de.saxsys.mvvmfx;
-    requires mvvmfx;
+    requires de.saxsys.mvvmfx;
 
     exports de.saxsys.mvvmfx.examples.jigsaw.app to javafx.graphics;
 

@@ -1,6 +1,6 @@
 module mvvmfx.guice {
     requires com.google.guice;
-    requires mvvmfx;
+    requires de.saxsys.mvvmfx;
     requires javafx.controls;
     exports de.saxsys.mvvmfx.guice;
 }

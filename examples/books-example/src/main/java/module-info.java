@@ -4,7 +4,7 @@ open module examples.books {
     requires mvvmfx.easydi;
     requires eu.lestard.easydi;
     requires eu.lestard.doc.annotations;
-    requires mvvmfx;
+    requires de.saxsys.mvvmfx;
     requires flatter;
     requires com.theoryinpractive.halbuilder.api;
     requires resteasy.client;

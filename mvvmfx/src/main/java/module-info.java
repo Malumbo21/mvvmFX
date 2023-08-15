@@ -1,4 +1,4 @@
-module mvvmfx {
+module de.saxsys.mvvmfx {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.swing;
